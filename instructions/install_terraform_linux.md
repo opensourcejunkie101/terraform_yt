@@ -1,13 +1,31 @@
 ## HOW TO INSTALL TERRAFORM ON LINUX OS
 
-### 1. Download `Zip` and `Wget`
+### 1. Download `unzip` and `wget`
+
+Terraform is packaged under zip by Hashicorp, hence unzip is required to extract the terraform binary and execute it. `wget` will be used for downloading the files from remote sources.
 
 * RHEL and CentOS
 ```
-yum install wget -y
+yum install wget unzip -y
 ```
 
 * Ubuntu and Debian
 ```
-apt install wget -y
+apt install wget unzip -y
 ```
+
+### 2. Download the terraform binaries
+
+Terraform binaries are maintained and managed by Hashicorp at this location - https://releases.hashicorp.com/terraform/
+
+```
+mkdir ~/Terraform
+
+TERRAFORM_VERSION="0.12.29"
+OSFAMILY="linux"
+
+wget https://releases.hashicorp.com/terraform/0.12.29/terraform_${TERRAFORM_VERSION}_${OSFAMILY}_amd64.zip -O terraform_${TERRAFORM_VERSION}.zip
+
+```
+
+### 3. Extract and Add binaries to the `PATH`
