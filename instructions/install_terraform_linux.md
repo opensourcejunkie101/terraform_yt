@@ -6,12 +6,12 @@ Terraform is packaged under zip by Hashicorp, hence unzip is required to extract
 
 * RHEL and CentOS
 ```
-yum install wget unzip -y
+sudo yum install wget unzip -y
 ```
 
 * Ubuntu and Debian
 ```
-apt install wget unzip -y
+sudo apt install wget unzip -y
 ```
 
 ### 2. Download the terraform binaries
@@ -39,7 +39,7 @@ Add the binaries to PATH variable
 # to list all environment path variables
 echo $PATH
 
-mv terraform /usr/local/bin/
+sudo mv terraform /usr/local/bin/
 ```
 
 ### 4. Validate terraform Installation
