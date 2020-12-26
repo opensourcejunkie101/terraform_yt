@@ -42,3 +42,8 @@ echo $PATH
 mv terraform /usr/local/bin/
 ```
 
+### 4. Validate terraform Installation
+```
+terraform version
+```
+
