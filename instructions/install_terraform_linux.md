@@ -19,7 +19,7 @@ sudo apt install wget unzip -y
 Terraform binaries are maintained and managed by Hashicorp at this location - https://releases.hashicorp.com/terraform/
 
 ```
-mkdir ~/Terraform && ~/Terraform
+mkdir ~/Terraform && cd ~/Terraform
 
 TERRAFORM_VERSION="0.12.29"
 
