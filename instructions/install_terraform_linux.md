@@ -22,10 +22,23 @@ Terraform binaries are maintained and managed by Hashicorp at this location - ht
 mkdir ~/Terraform
 
 TERRAFORM_VERSION="0.12.29"
-OSFAMILY="linux"
 
-wget https://releases.hashicorp.com/terraform/0.12.29/terraform_${TERRAFORM_VERSION}_${OSFAMILY}_amd64.zip -O terraform_${TERRAFORM_VERSION}.zip
+wget https://releases.hashicorp.com/terraform/0.12.29/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -O terraform_${TERRAFORM_VERSION}.zip
 
 ```
 
 ### 3. Extract and Add binaries to the `PATH`
+
+Unzip the terraform binary
+```
+unzip terraform_${TERRAFORM_VERSION}.zip
+```
+
+Add the binaries to PATH variable
+```
+# to list all environment path variables
+echo $PATH
+
+mv terraform /usr/local/bin/
+```
+
