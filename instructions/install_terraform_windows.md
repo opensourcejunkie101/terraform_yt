@@ -36,4 +36,4 @@ $env:Path += ";$TARGET_DIR\bin"
 terraform version
 ```
 
-Note: To add terraform binary path permanantly follow these instructions - [Windows Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1#using-and-changing-environment-variables)
+Note: To add terraform binary path permanantly - [Windows Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1#using-and-changing-environment-variables)
