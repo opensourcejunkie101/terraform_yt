@@ -23,7 +23,7 @@ mkdir ~/Terraform && cd ~/Terraform
 
 TERRAFORM_VERSION="0.12.29"
 
-wget https://releases.hashicorp.com/terraform/0.12.29/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -O terraform_${TERRAFORM_VERSION}.zip
+wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -O terraform_${TERRAFORM_VERSION}.zip
 
 ```
 
