@@ -31,8 +31,9 @@ Write-Host $env:Path
 $env:Path += ";$TARGET_DIR\bin"
 ```
 
-### 4. Validate terraform Installation
+### 3. Validate terraform Installation
 ```
 terraform version
 ```
 
+Note: To add terraform binary path permanantly follow these instructions - [Windows Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1#using-and-changing-environment-variables)
