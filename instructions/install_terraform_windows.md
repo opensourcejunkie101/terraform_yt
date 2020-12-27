@@ -31,6 +31,11 @@ Write-Host $env:Path
 $env:Path += ";$TARGET_DIR\bin"
 ```
 
+Remove the terraform zip
+```
+Remove-Item $TARGET_DIR\*.zip
+```
+
 ### 3. Validate terraform Installation
 ```
 terraform version
