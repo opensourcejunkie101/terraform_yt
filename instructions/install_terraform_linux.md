@@ -42,6 +42,11 @@ echo $PATH
 sudo mv terraform /usr/local/bin/
 ```
 
+Remove the terraform binary
+```
+rm -f terraform_${TERRAFORM_VERSION}.zip
+```
+
 ### 4. Validate terraform Installation
 ```
 terraform version
