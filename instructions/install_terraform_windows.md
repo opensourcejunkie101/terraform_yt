@@ -8,7 +8,7 @@ Terraform binaries are maintained and managed by Hashicorp at this location - ht
 ```
 $TARGET_DIR = 'C:\Terraform\' 
 $TERRAFORM_VERSION = '0.12.29'
-$TERRAFORM_URI = 'https://releases.hashicorp.com/terraform/' + $TERRAFORM_VERSION + '/terraform_' + $TERRAFORM_VERSION + '_linux_amd64.zip'
+$TERRAFORM_URI = 'https://releases.hashicorp.com/terraform/' + $TERRAFORM_VERSION + '/terraform_' + $TERRAFORM_VERSION + '_windows_amd64.zip'
 $TERRAFORM_ZIP = $TARGET_DIR + 'terraform_' + $TERRAFORM_VERSION + '.zip'
 
 Invoke-WebRequest -Uri $TERRAFORM_URI -OutFile ( New-Item -Path $TERRAFORM_ZIP  -Force )
